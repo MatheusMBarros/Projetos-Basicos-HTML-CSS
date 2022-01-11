@@ -1,52 +1,41 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="pt">
     <head>
-        <title>Barros Graphics</title>
-        <meta charset="utf-8"/>
-     <link href ="style.css" rel="stylesheet" type="text/css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <title>Starbucks Coffee</title>
+        <link rel="stylesheet" href="css/style.css">
     </head>
-
     <body>
-        <form>
-             <fieldset>
-                <legend>Contact form</legend>
-                <h2 class="tag">Nome</h2>
-                <div><input type="text" name="nome" placeholder="Digíte seu nome aqui!"></div>
-                <h2 class="tag">Email</h2>
-                <div><input type="text" name="email" placeholder="Digíte seu email aqui!"></div>
+        <header>
+            <div class="center">
+                <div class="logo"><img src="img/logo.png" alt=""></div><!--logo-->
+                    <div class="menu">
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Menu</a>
+                        <a href="#">What´s new</a>
+                    </div><!--menu-->
+            </div><!--center-->
+        </header>
+        <section class="sobre">
+            <div class="extras">
+                <img id="img" src="img\img1.png">
+                <div class="social-media">
+                    <a href=""><img src="img\facebook.png"></a>
+                    <a href=""><img src="img\instagram.png"></a>
+                    <a href=""><img src="img\twitter.png"></a>
+                </div><!--Social-media-->
+            </div><!--extras-->
+            <div class="center">
+                <div class="texto-sobre">
+                     <h1>It's not just coffee <br/>It's <span style="color:#017143;">StarBucks</span></h1>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel nisl ultrices, accumsan dui eu, congue magna. Fusce aliquam congue magna ac interdum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel nisl ultrices, accumsan dui eu, congue magna. Fusce aliquam congue magna ac interdum.  Fusce aliquam congue magna ac interdum      </p>
+                     <button>Learn More</button>
+                    </div><!--texto-sobre-->
+            </div><!--center-->
+        </section><!--sobre-->
 
-            <div>
-                     <h2 id="idade">Qual sua idade?</h2>
-                <select name="lista">
-                    <option disabled selected>Qual a sua idade?</option>
-                    <option value"20">20</option>
-                    <option value"25+">25+</option>
-                    <option value"30+">30+</option>
-                    <option value"outro">outro</option>
-                </select>
-            </div>
-
-                    <h2>Qual sua cidade?</h2>
-                <div class="input">
-                     <div><input type="radio" name="cidade" value="Florianópolis"><span>Florianópolis</span></div>
-                     <div><input type="radio" name="cidade" value="São Paulo"><span>São Paulo</span></div>
-                     <div><input type="radio" name="cidade" value="Rio de Janeiro"><span>Rio de Janeiro</span></div>
-                </div>
-
-                    <h2>O que você gosta de comer?</h2>
-                <div class="input">
-                    <div><input type="checkbox" name="comida[]" value="Fruta"><span>Fruta</span></div>
-                    <div><input type="checkbox" name="comida[]" value="Salada"><span>Salada</span></div>
-                    <div><input type="checkbox" name="comida[]" value="Chocolate"><span>Chocolate</span></div>
-               </div>
-
-               <div><textarea name="text" placeholder="Possui alguma observação?"value="observação?"></textarea></div>
-
-                 <input type="file" id="file" name="file">
-                 <label for="file">Insira um arquivo</label>
-
-                 <div><input type="submit" name="acao" value="Enviar"></div>
-             </fieldset>
-         </form>
     </body>
 </html>
